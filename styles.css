@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
