@@ -2,6 +2,10 @@ const form = document.querySelector("form");
 const input = document.querySelector("input");
 const list = document.querySelector("#todo-list");
 
+//when the DOM loads, retrieve the data out of the localStorage
+//then select the location you want to display
+//then display the entire HTML
+
 document.addEventListener(
   "DOMContentLoaded",
   function (e) {
@@ -11,7 +15,7 @@ document.addEventListener(
     const location =
       document.querySelector("#todo-list");
 
-    location.insertAdjacentElement(
+    location.insertAdjacentHTML(
       "afterbegin",
       savedTodos
     );
